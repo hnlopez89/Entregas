@@ -1,29 +1,31 @@
-'use strict';
+"use strict";
 
 function askUserForOperator1() {
-  return +prompt('Numero 1');
+  return +prompt("Numero 1");
 }
 
 function askUserForOperation() {
-  return prompt('¿Que operacion quieres hacer? (sumar, restar, multiplicar, dividir o elevar a la potencia)');
+  return prompt(
+    "¿Que operacion quieres hacer? (sumar, restar, multiplicar, dividir o elevar a la potencia)"
+  );
 }
 
 function askUserForOperator2() {
-  return +prompt('Numero 2');
+  return +prompt("Numero 2");
 }
 
 let userOperation = askUserForOperation();
 
-if (userOperation === 'sumar') {
+if (userOperation === "sumar") {
   console.log(askUserForOperator1() + askUserForOperator2());
-} else if (userOperation === 'restar') {
+} else if (userOperation === "restar") {
   console.log(askUserForOperator1() - askUserForOperator2());
-} else if (userOperation === 'multiplicacion') {
+} else if (userOperation === "multiplicar") {
   console.log(askUserForOperator1() * askUserForOperator2());
-} else if (userOperation === 'dividir') {
+} else if (userOperation === "dividir") {
   console.log(askUserForOperator1() / askUserForOperator2());
-} else if (userOperation === 'elevar a la potencia') {
+} else if (userOperation === "elevar a la potencia") {
   console.log(Math.pow(askUserForOperator1(), askUserForOperator2()));
 } else {
-  console.log('la operacion seleccionada es incorrecta');
+  console.log("la operacion seleccionada es incorrecta");
 }
