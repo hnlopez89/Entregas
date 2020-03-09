@@ -1,0 +1,20 @@
+{
+  "name": "hackabos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server 'www' --files 'www'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "eslint": "^6.3.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.14.3"
+  },
+  "dependencies": {}
+}
