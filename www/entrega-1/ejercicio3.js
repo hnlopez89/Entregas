@@ -8,7 +8,7 @@ for (let i = 1; puntuacionTotal < 50; i++) {
 }
 
 if (puntuacionTotal < 51) {
-  console.log(i, dice, puntuacionTotal);
+  console.log(`${i}, dice, puntuacionTotal`);
 } else {
-  console.log(i, dice, puntuacionTotal);
+  console.log(`${i}, dice, puntuacionTotal`);
 }
