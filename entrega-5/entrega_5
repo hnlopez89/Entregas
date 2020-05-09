@@ -1,0 +1,5 @@
+customer(#id, name, surname, dni, telephone_number, bank_account, email_address)
+car(#id, label, brand, model, type)
+parking(#id, check_in_time, check_out_time, elapsed_time, penalty, -id_customer)
+parking_place(#id, neighbourhood, opening_time, closing_time, rate, time_limit, opened, notes, -id_parking)
+car_parking_place_parking(#[-id_car, -id_parking_place, -id_parking])
