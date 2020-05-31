@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Pokemon";
+  src: url("/font/PokemonSolidNormal.woff");
+}
+@font-face {
+  font-family: "PokemonHollow";
+  src: url("/font/PokemonHollowNormal.woff");
+}
+
+html {
+  --dark: rgb(20, 20, 20);
+  --gray: rgb(150, 150, 150);
+  --white: rgb(255, 255, 255);
+  --gold: rgb(251, 235, 5);
+  --font: Pokemon, verdana;
+  --title: PokemonHollow, verdana;
+  background-color: var(--gold);
+}
+
+* {
+  font-family: var(--font);
+  margin: 0rem;
+  padding: 0rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body > header {
+  background-image: url("/img/pokeball.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  padding-bottom: 15rem;
+  min-height: 20rem;
+  width: 100%;
+}
+
+body > header h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--dark);
+  font-family: var(--title);
+}
+
+section {
+  padding: 0 1rem;
+}
+section > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+ul > li {
+  list-style: none;
+  padding: 0 1rem;
+  max-width: 350px;
+  margin: 0.5rem;
+}
+ul > li h2 {
+  font-family: var(--title);
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+nav {
+  padding-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  padding: 1rem;
+  display: block;
+  object-fit: cover;
+}
+
+article > p {
+  padding-bottom: 1rem;
+}
+
+.fire {
+  background: rgb(255, 140, 98);
+}
+
+.water {
+  background-color: lightseagreen;
+}
+
+.grass {
+  background-color: green;
+}
+
+#facebook {
+  background-image: url("/img/facebook.svg");
+}
+#instagram {
+  background-image: url("/img/insta.svg");
+}
+#twitter {
+  background-image: url("/img/twitter.svg");
+}
+#linkedin {
+  background-image: url("/img/linkedin.svg");
+}
+
+body > main section ul li article nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+body > main section ul li article nav ul li {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+body > main section ul li article nav ul li a {
+  display: block;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  body > header {
+    min-height: 30rem;
+  }
+
+  section > ul {
+    display: flex;
+    justify-content: center;
+  }
+  section > ul li {
+    width: 31%;
+    max-width: 15rem;
+  }
+
+  section > ul li figure {
+    height: 15rem;
+  }
+  section > ul li figure img {
+    min-height: 10rem;
+  }
+}
