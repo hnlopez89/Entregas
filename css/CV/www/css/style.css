@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@700&family=Roboto:ital,wght@0,700;1,300&display=swap");
+
+html {
+  --dark-bg: rgb(20, 20, 20);
+  --gray: rgb(150, 150, 150);
+  --white: rgb(255, 255, 255);
+  --title-font: "Pragati Narrow", sans-serif;
+  --body-font: Roboto, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--dark-bg);
+  background-image: url("/img/fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 900px;
+  position: relative;
+  margin: 0 auto;
+  background-color: var(--white);
+}
+
+header {
+  background-color: rgb(20, 20, 20);
+  color: var(--white);
+  padding: 3rem 0 1.5rem 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  font-family: var(--title-font);
+  text-decoration: underline;
+}
+
+header p {
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+header nav a {
+  background-color: var(--white);
+  color: var(--dark-bg);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.25rem 2rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+header nav a strong {
+  display: block;
+  font-size: 1.25rem;
+}
+
+#content {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--gray);
+  text-align: center;
+}
+
+#content h2 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#content p {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+
+.intro {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+section {
+  padding: 0 1rem;
+}
+section:not(.intro) {
+  font-weight: 100;
+}
+
+article figure img {
+  position: relative;
+}
+article {
+  padding-bottom: 2rem;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--gray);
+  padding: 2rem 0;
+}
+
+footer p {
+  text-decoration: underline;
+}
+
+@media (min-width: 500px) {
+  section article {
+    columns: 2;
+  }
+}
+
+@media (min-width: 750px) {
+  html {
+    font-size: 18px;
+  }
+
+  #content {
+    position: absolute;
+    right: -1rem;
+    top: 3rem;
+    font-size: 0.7rem;
+    width: 5rem;
+    padding: 1rem;
+  }
+  #content h2 {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  #content p {
+    font-size: 0.7rem;
+    font-weight: 300;
+  }
+  section > p {
+    margin: 0 10%;
+    text-align: center;
+  }
+  footer {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
