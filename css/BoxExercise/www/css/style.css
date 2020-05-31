@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@700&family=Roboto:ital,wght@0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@700&family=Roboto:wght@100;300&display=swap");
 
 html {
   --dark-bg: rgb(20, 20, 20);
@@ -89,6 +89,7 @@ header nav a strong {
 .intro {
   font-size: 1rem;
   margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
 section {
