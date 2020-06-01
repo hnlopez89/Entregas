@@ -12,6 +12,7 @@ html {
   padding: 0;
   text-decoration: none;
   font-family: var(--font);
+  color: var(--dark);
 }
 
 img {
@@ -19,21 +20,15 @@ img {
 }
 
 header > figure img {
-  height: 10rem;
-  width: 10rem;
+  height: 8rem;
+  width: 8rem;
   border: solid 7px;
   border-radius: 50rem;
 }
 
 body {
-  font-family: Roboto, sans-serif;
-  color: var(--dark-bg);
   min-height: 100vh;
   background-color: var(--white);
-}
-
-main {
-  margin: 0 auto;
 }
 
 nav {
@@ -90,6 +85,15 @@ section ul li {
   padding-top: 0.5rem;
 }
 
+main#about header h3 {
+  font-size: 2.5rem;
+}
+main#about section figure {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
 a.click {
   background-color: var(--blue);
   padding: 0.5rem 2rem;
@@ -98,24 +102,66 @@ a.click {
   display: inline-block;
 }
 
-@media (min-width: 500px) {
-  section article {
-    columns: 2;
+@media (min-width: 700px) {
+  main.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main.intro header {
+    width: 100%;
+  }
+  main.intro section {
+    width: 45%;
+  }
+  main.intro #experience h3 {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  main.intro #experience ul {
+    font-size: 0.8rem;
   }
 }
-
-@media (min-width: 750px) {
-  html {
-    font-size: 18px;
+@media (min-width: 1000px) {
+  main.intro header {
+    padding-right: 0.5rem;
+    width: 25%;
+    text-align: end;
+  }
+  main.intro header h1 {
+    font-size: 3.3rem;
+  }
+  main.intro section {
+    width: 30%;
+    padding: 1rem 0;
+  }
+  main.intro section#description {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  #about {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  main#about header {
+    width: 30%;
+    padding-right: 0.5rem;
   }
 
-  section > p {
-    margin: 0 10%;
-    text-align: center;
+  main#about header h3 {
+    font-size: 6rem;
+    width: 100%;
+    text-align: right;
   }
-  footer {
-    position: relative;
-    max-width: 900px;
-    margin: 0 auto;
+  main#about header a.click {
+    margin-left: 68%;
+  }
+  #about section {
+    width: 65%;
+  }
+  #about section figure img {
+    width: 100%;
   }
 }
