@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Mis tareas</h1>
+    </header>
+
+    <form id="new-todo">
+      <fieldset>
+        <label for="todo">Nueva tarea:</label>
+        <input
+          type="text"
+          id="todo"
+          name="todo"
+          placeholder="Escribe lo que tienes que hacer"
+        />
+      </fieldset>
+
+      <button class="add">Añadir</button>
+
+      <button class="clean">Limpiar tareas</button>
+      <button class="delete">Borrar todas</button>
+    </form>
+
+    <ul id="todos">
+      <li>
+        <input type="checkbox" />
+        <p>
+          Texto de la tarea Texto de la tarea Texto de la tarea Texto de la
+          tarea
+        </p>
+      </li>
+      <li class="done">
+        <input type="checkbox" />
+        <p>
+          Texto de la tarea Texto de la tarea Texto de la tarea Texto de la
+          tarea
+        </p>
+      </li>
+      <li>
+        <input type="checkbox" />
+        <p>
+          Texto de la tarea Texto de la tarea Texto de la tarea Texto de la
+          tarea
+        </p>
+      </li>
+      <li>
+        <input type="checkbox" />
+        <p>
+          Texto de la tarea Texto de la tarea Texto de la tarea Texto de la
+          tarea
+        </p>
+      </li>
+      <li>
+        <input type="checkbox" />
+        <p>
+          Texto de la tarea Texto de la tarea Texto de la tarea Texto de la
+          tarea
+        </p>
+      </li>
+    </ul>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Mis tareas</h1>
+    </header>
+
+    <form id="new-todo">
+      <fieldset>
+        <label for="todo">Nueva tarea:</label>
+        <input
+          type="text"
+          id="todo"
+          name="todo"
+          placeholder="Escribe lo que tienes que hacer"
+        />
+      </fieldset>
+
+      <button class="add">Añadir</button>
+
+      <button type="button" class="clean">Limpiar tareas</button>
+      <button type="button" class="delete">Borrar todas</button>
+    </form>
+
+    <ul id="todos">
+      <!-- <li class="done">
+      <input type="checkbox" checked>
+      <p>Texto de la tarea Texto de la tarea Texto de la tarea Texto de la tarea</p>
+    </li> -->
+    </ul>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
