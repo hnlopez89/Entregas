@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Clock;
+  src: url("/css/font/DS-Digital-Bold.woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-family: Clock;
+  color: rgb(30, 206, 206);
+  font-size: 2.5rem;
+}
+
+body.blue {
+  background-image: url("/css/img/morning.jpeg");
+}
+
+body.gold {
+  background-image: url("/css/img/afternoon.jpeg");
+}
+
+body.dark {
+  background-image: url("/css/img/night.jpeg");
+}
