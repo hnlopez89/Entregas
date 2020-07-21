@@ -1,0 +1,19 @@
+{
+  "name": "freememory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "freememory.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.2.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "minimist": "^1.2.5"
+  }
+}
