@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <vue-headful title="Welcome to Hack a music - Top Tags " />
     <toptags :toptags="toptags" />
   </div>
 </template>
@@ -11,16 +12,18 @@ import toptags from "@/components/TopTagsComp.vue";
 export default {
   name: "Home",
   components: {
-    toptags
+    toptags,
   },
   data() {
     return {
-      toptags: []
+      toptags: [],
     };
   },
   created() {
-    api.getTopTags().then(response => (this.toptags = response.data.tags.tag));
-  }
+    api
+      .getTopTags()
+      .then((response) => (this.toptags = response.data.tags.tag));
+  },
 };
 </script>
 

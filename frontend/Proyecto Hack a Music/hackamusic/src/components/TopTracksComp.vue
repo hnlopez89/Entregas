@@ -17,11 +17,11 @@
 export default {
   name: "TopTrackComp",
   props: {
-    toptracks: Array
+    toptracks: Array,
   },
   data() {
     return {
-      search: ""
+      search: "",
     };
   },
   computed: {
@@ -29,11 +29,11 @@ export default {
       if (!this.search) {
         return this.toptracks;
       }
-      return this.toptracks.filter(tag =>
+      return this.toptracks.filter((track) =>
         track.name.toLowerCase().includes(this.search.toLowerCase())
       );
-    }
-  }
+    },
+  },
 };
 </script>
 

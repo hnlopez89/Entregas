@@ -1,5 +1,6 @@
 <template>
   <div class="About">
+    <vue-headful title="About" />
     <h1>About me</h1>
     <h3>Hugo Nogueira López</h3>
     <ul>
@@ -24,7 +25,7 @@ export default {
 
   data() {
     return {};
-  }
+  },
 };
 </script>
 

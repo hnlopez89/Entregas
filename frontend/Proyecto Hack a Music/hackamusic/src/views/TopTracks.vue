@@ -1,5 +1,6 @@
 <template>
   <div class="toptracks">
+    <vue-headful title="Top Tracks" />
     <toptracks :toptracks="toptracks" />
   </div>
 </template>
@@ -11,18 +12,18 @@ import toptracks from "@/components/TopTracksComp.vue";
 export default {
   name: "TopTracks",
   components: {
-    toptracks
+    toptracks,
   },
   data() {
     return {
-      toptracks: []
+      toptracks: [],
     };
   },
   created() {
     api
       .getTopTracks()
-      .then(response => (this.toptracks = response.data.tracks.track));
-  }
+      .then((response) => (this.toptracks = response.data.tracks.track));
+  },
 };
 </script>
 <style scoped>

@@ -1,5 +1,6 @@
 <template>
   <div class="topartits">
+    <vue-headful title="Top Artists" />
     <topartists :artists="artists" />
   </div>
 </template>
@@ -11,18 +12,18 @@ import topartists from "@/components/TopArtistsComp.vue";
 export default {
   name: "TopArtists",
   components: {
-    topartists
+    topartists,
   },
   data() {
     return {
-      artists: []
+      artists: [],
     };
   },
   created() {
     api
       .getArtists()
-      .then(response => (this.artists = response.data.topartists.artist));
-  }
+      .then((response) => (this.artists = response.data.topartists.artist));
+  },
 };
 </script>
 <style scoped>
