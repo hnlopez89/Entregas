@@ -1,0 +1,260 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("/font/Roboto-Medium.woff");
+}
+
+html {
+	--away: #7dcece;
+	--home: #25414f;
+	--dark: #202020;
+	--clear: #dddddd;
+	--staples: Roboto, sans-serif;
+	padding-bottom: 10rem;
+}
+
+* {
+	margin: 0rem;
+	padding: 0rem;
+	font-family: var(--staples);
+	max-width: 50rem;
+	max-height: 100%;
+}
+
+/* header */
+header {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: var(--away);
+	padding: 1rem;
+	text-align: center;
+}
+
+header div > img {
+	width: 15rem;
+	height: 100%;
+}
+
+header div > p,
+header div > h4 {
+	color: white;
+	margin-bottom: 1rem;
+}
+
+header div > h1 {
+	color: var(--home);
+	margin: 1rem 0;
+}
+
+header #picture {
+	align-self: center;
+}
+
+main {
+	background: var(--away);
+	color: var(--home);
+	margin-bottom: 10rem;
+}
+
+main > section h2 {
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+main section {
+	padding: 0rem;
+}
+
+main section ul > li {
+	padding: 1rem;
+}
+
+main section ul li > h3 {
+	margin-bottom: 0.5rem;
+}
+
+main section ul > li:nth-child(odd) {
+	background-color: var(--home);
+	color: var(--away);
+}
+
+main section ul > li:nth-child(odd) h4 {
+	color: white;
+}
+
+main section ul > li:nth-child(even) p {
+	color: white;
+}
+
+main > section ul {
+	list-style: none;
+}
+
+main > section#form {
+	background-color: var(--away);
+	color: var(--home);
+	margin-bottom: 5rem;
+	padding: 1rem;
+	padding-right: 5rem;
+}
+
+#form h2 {
+	font-size: 3rem;
+	text-align: center;
+	margin: 5rem 0;
+}
+
+#form form fieldset {
+	border: 0;
+	margin-bottom: 0.8rem;
+}
+
+#form form input,
+#form form textarea,
+#form form select {
+	width: 100%;
+	border: 2px solid grey;
+	padding: 0.5rem;
+	margin: 0.5rem;
+	color: grey;
+	background-color: white;
+}
+
+#form form textarea {
+	padding-bottom: 4rem;
+}
+
+#form form input#checkbox {
+	width: 1rem;
+	margin: 0 1rem;
+}
+
+section#form form fieldset.inline label {
+	display: inline;
+	margin: 0 auto;
+	width: 30rem;
+}
+section#form form fieldset.inline input {
+	width: 1rem;
+}
+
+#gender {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#form form input#male,
+#form form input#female {
+	margin-left: 1rem;
+	width: 1rem;
+	padding: auto;
+	margin-bottom: 1rem;
+}
+
+button.box {
+	padding: 0.5rem 1.5rem;
+	border: 0.1rem solid grey;
+	border-radius: 0.12em;
+	box-sizing: border-box;
+	font-weight: bold;
+	background-color: white;
+	color: var(--home);
+	text-align: center;
+	margin: 1rem auto;
+}
+
+button.box:hover {
+	background-color: var(--home);
+	color: var(--away);
+}
+
+h3#staff {
+	text-align: center;
+	font-size: 1.5rem;
+	margin: 2rem 0;
+}
+
+.video {
+	position: relative;
+	padding-bottom: 56.25%; /*panorámico*/
+	padding-top: 25px;
+	height: 0;
+}
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media (min-width: 700px) {
+	html {
+		font-size: 18px;
+	}
+	header {
+		max-width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		min-height: 20rem;
+	}
+
+	header div > p,
+	header div > h4 {
+		font-size: 1.5rem;
+	}
+
+	header div > h1 {
+		padding: 0.2rem;
+		font-size: 4rem;
+	}
+
+	main section ul > li {
+		padding: 2.5rem;
+		height: 10rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	main > section#form {
+		background-color: var(--away);
+		color: var(--home);
+		margin-bottom: 5rem;
+		padding: 1rem 6rem;
+	}
+
+	main section ul li > h3 {
+		font-size: 2.5rem;
+		align-self: center;
+		width: 31rem;
+		padding-right: 3rem;
+	}
+
+	main section ul li > div {
+		align-self: center;
+	}
+
+	main section ul li div > h4 {
+		font-size: 1.6rem;
+		margin-bottom: 1rem;
+	}
+	main section ul li div > p {
+		font-weight: 100;
+	}
+
+	#form form {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	input#male.radio,
+	input#female.radio {
+		margin-left: 1rem;
+		width: auto;
+	}
+}

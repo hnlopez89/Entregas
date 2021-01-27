@@ -1,0 +1,21 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+html {
+	--red: red;
+}
+
+body {
+	display: flex;
+}
+
+header {
+	width: 15rem;
+	color: var(--red);
+}
+header > img {
+	width: 15rem;
+}
