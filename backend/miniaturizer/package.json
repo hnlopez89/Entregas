@@ -13,7 +13,7 @@
     "fs": "0.0.1-security",
     "minimist": "^1.2.5",
     "path": "^0.12.7",
-    "sharp": "^0.25.4",
+    "sharp": "^0.30.5",
     "uuid": "^8.2.0"
   },
   "devDependencies": {
